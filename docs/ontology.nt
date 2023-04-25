@@ -1,0 +1,500 @@
+<https://w3id.org/GerPS-onto/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/GerPS-onto/ontology#> <http://www.w3.org/2002/07/owl#imports> <http://BPMNbasedOntology> .
+<https://w3id.org/GerPS-onto/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/GerPS-onto/ontology#> <https://w3id.org/GerPS-onto/ontology#author> "Jonas Author" .
+<https://w3id.org/GerPS-onto/ontology#> <https://w3id.org/GerPS-onto/ontology#author> "Leila Feddoul" .
+<https://w3id.org/GerPS-onto/ontology#> <https://w3id.org/GerPS-onto/ontology#author> "Maximilian Raupach" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/GerPS-onto/ontology#Version
+<https://w3id.org/GerPS-onto/ontology#Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/GerPS-onto/ontology#author
+<https://w3id.org/GerPS-onto/ontology#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/GerPS-onto/ontology#hasChild
+<https://w3id.org/GerPS-onto/ontology#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://BPMNbasedOntology#has_process
+<http://BPMNbasedOntology#has_process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://BPMNbasedOntology#has_resource
+<http://BPMNbasedOntology#has_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://BPMNbasedOntology#has_sourceRef
+<http://BPMNbasedOntology#has_sourceRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://BPMNbasedOntology#has_sourceRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://BPMNbasedOntology#has_targetRef
+<http://BPMNbasedOntology#has_targetRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://BPMNbasedOntology#is_attachedToRef
+<http://BPMNbasedOntology#is_attachedToRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/GerPS-onto/ontology#basiert_auf
+<https://w3id.org/GerPS-onto/ontology#basiert_auf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#basiert_auf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#basiert_auf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#basiert_auf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> .
+<https://w3id.org/GerPS-onto/ontology#basiert_auf> <http://www.w3.org/2000/01/rdf-schema#label> "based_on"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an
+<https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an> <http://www.w3.org/2000/01/rdf-schema#label> "participates_in"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#enthaelt
+<https://w3id.org/GerPS-onto/ontology#enthaelt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#enthaelt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#enthaelt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Struktur> .
+# 
+# https://w3id.org/GerPS-onto/ontology#fuehrt_aus
+<https://w3id.org/GerPS-onto/ontology#fuehrt_aus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#fuehrt_aus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#fuehrt_aus> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Prozess> .
+<https://w3id.org/GerPS-onto/ontology#fuehrt_aus> <http://www.w3.org/2000/01/rdf-schema#label> "executes"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_prozess
+<https://w3id.org/GerPS-onto/ontology#hat_prozess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://BPMNbasedOntology#has_process> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Leistung> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Prozess> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozess> <http://www.w3.org/2000/01/rdf-schema#label> "has_process"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_prozessschritt
+<https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Prozess> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> <http://www.w3.org/2000/01/rdf-schema#label> "has_process_step"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_regel
+<https://w3id.org/GerPS-onto/ontology#hat_regel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_regel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_ressource
+<https://w3id.org/GerPS-onto/ontology#hat_ressource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_ressource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://BPMNbasedOntology#has_resource> .
+<https://w3id.org/GerPS-onto/ontology#hat_ressource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#hat_ressource> <http://www.w3.org/2000/01/rdf-schema#range> <http://BPMNbasedOntology#Resource> .
+<https://w3id.org/GerPS-onto/ontology#hat_ressource> <http://www.w3.org/2000/01/rdf-schema#label> "has_resource"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_typ
+<https://w3id.org/GerPS-onto/ontology#hat_typ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_typ> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_typ> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#hat_typ> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/GerPS-onto/ontology#RAG> .
+<https://w3id.org/GerPS-onto/ontology#hat_typ> <http://www.w3.org/2000/01/rdf-schema#label> "has_type"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://BPMNbasedOntology#id
+<http://BPMNbasedOntology#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://BPMNbasedOntology#name
+<http://BPMNbasedOntology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_abgabefrist
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/GerPS-onto/ontology#hat_frist> .
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Dokument> .
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/2000/01/rdf-schema#comment> "Submission deadlines are tied to documents and specify a time period in which a document must be submitted"@en .
+<https://w3id.org/GerPS-onto/ontology#hat_abgabefrist> <http://www.w3.org/2000/01/rdf-schema#label> "has_submission_deadline"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist
+<https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/GerPS-onto/ontology#hat_frist> .
+<https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Prozess> .
+<https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/GerPS-onto/ontology#hat_bearbeitungsfrist> <http://www.w3.org/2000/01/rdf-schema#label> "has_processing_deadline"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_datenfeldID
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://BPMNbasedOntology#id> .
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Datenfelder> .
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/2000/01/rdf-schema#comment> "The data field ID describes the unique identifier for data fields."@en .
+<https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> <http://www.w3.org/2000/01/rdf-schema#label> "has_datafieldID"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_elementtyp
+<https://w3id.org/GerPS-onto/ontology#hat_elementtyp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_elementtyp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_elementtyp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Datenfelder> .
+<https://w3id.org/GerPS-onto/ontology#hat_elementtyp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/GerPS-onto/ontology#hat_elementtyp> <http://www.w3.org/2000/01/rdf-schema#label> "has_element_type"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_frist
+<https://w3id.org/GerPS-onto/ontology#hat_frist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_frist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_frist> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/GerPS-onto/ontology#hat_frist> <http://www.w3.org/2000/01/rdf-schema#comment> "Processing deadlines are tied to processes and define a period of time in which the execution of a process must be completed."@en .
+<https://w3id.org/GerPS-onto/ontology#hat_frist> <http://www.w3.org/2000/01/rdf-schema#label> "has_deadline"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#hat_leikaID
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://BPMNbasedOntology#id> .
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/GerPS-onto/ontology#Leistung> .
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/2000/01/rdf-schema#comment> "The LeiKaID describes the unique identifier for administrative services defined by the service catalog."@en .
+<https://w3id.org/GerPS-onto/ontology#hat_leikaID> <http://www.w3.org/2000/01/rdf-schema#label> "has_leikaID"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://BPMNbasedOntology#Activity
+<http://BPMNbasedOntology#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#Agent
+<http://BPMNbasedOntology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://BPMNbasedOntology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://BPMNbasedOntology#BoundaryEvent
+<http://BPMNbasedOntology#BoundaryEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#CallActivity
+<http://BPMNbasedOntology#CallActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#DataResource
+<http://BPMNbasedOntology#DataResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#DocumentResource
+<http://BPMNbasedOntology#DocumentResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#EndEvent
+<http://BPMNbasedOntology#EndEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#ExclusiveGateway
+<http://BPMNbasedOntology#ExclusiveGateway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#ParallelGateway
+<http://BPMNbasedOntology#ParallelGateway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#Process
+<http://BPMNbasedOntology#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#Resource
+<http://BPMNbasedOntology#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#SequenceFlow
+<http://BPMNbasedOntology#SequenceFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#StartEvent
+<http://BPMNbasedOntology#StartEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#SubProcess
+<http://BPMNbasedOntology#SubProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://BPMNbasedOntology#Task
+<http://BPMNbasedOntology#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/eli/ontology#LegalResource> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> .
+# 
+# http://data.europa.eu/m8g/Evidence
+<http://data.europa.eu/m8g/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/m8g/Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The Evidence class is defined in the Core Criterion and Core Evidence vocabulary (CCCEV) as any resource that can prove that a specific requirement is met."@en .
+# 
+# http://data.europa.eu/m8g/PublicOrganisation
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/GerPS-onto/ontology#Hauptakteur> .
+<http://data.europa.eu/m8g/PublicOrganisation> <http://www.w3.org/2000/01/rdf-schema#comment> "An Organization that is defined as being part of the public sector by a legal framework at any level."@en .
+# 
+# http://purl.org/vocab/cpsv#PublicService
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/GerPS-onto/ontology#Leistung> .
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "A Public Service is a mandatory or discretionary set of activities performed, or able to be performed, by or on behalf of a public organisation, publicly funded and arise from public policy."@en .
+# 
+# http://purl.org/vocab/cpsv#Rule
+<http://purl.org/vocab/cpsv#Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/cpsv#Rule> <http://www.w3.org/2000/01/rdf-schema#comment> "The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows."@en .
+# 
+# http://www.w3.org/ns/org#FormalOrganization
+<http://www.w3.org/ns/org#FormalOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#FormalOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities"@en .
+# 
+# http://www.w3.org/ns/org#LegalEntity
+<http://www.w3.org/ns/org#LegalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#LegalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/GerPS-onto/ontology#Ergebnissempf\u00E4nger> .
+<http://www.w3.org/ns/org#LegalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A self-empoyed person, company, or organization that has legal rights and obligations."@en .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "The Agent class is any resource that acts or has the power to act. This includes people, organisations and groups. The Public Organization class, defined in the Core Public Organisation Vocabulary, is a notable subclass of Agent."@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Agent
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://BPMNbasedOntology#Agent> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#beteiligt_sich_an> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#fuehrt_aus> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://BPMNbasedOntology#Process> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#id> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor is a participant in the administrative process and assumes the role of either the result receiver, the contributor, or the main actor."@en .
+<https://w3id.org/GerPS-onto/ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Datenfeld
+<https://w3id.org/GerPS-onto/ontology#Datenfeld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Datenfeld> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Struktur> .
+<https://w3id.org/GerPS-onto/ontology#Datenfeld> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe> .
+<https://w3id.org/GerPS-onto/ontology#Datenfeld> <http://www.w3.org/2000/01/rdf-schema#comment> "a field where you can put in informations."@en .
+<https://w3id.org/GerPS-onto/ontology#Datenfeld> <http://www.w3.org/2000/01/rdf-schema#label> "Formularfield" .
+# 
+# https://w3id.org/GerPS-onto/ontology#Datenfelder
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://BPMNbasedOntology#DataResource> .
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/Evidence> .
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/2000/01/rdf-schema#comment> "Data fields are required components in the construction of forms."@en .
+<https://w3id.org/GerPS-onto/ontology#Datenfelder> <http://www.w3.org/2000/01/rdf-schema#label> "DataField"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe
+<https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Struktur> .
+<https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe> <http://www.w3.org/2000/01/rdf-schema#comment> "a Container, that contains structures and rules for them."@en .
+<https://w3id.org/GerPS-onto/ontology#Datenfeldgruppe> <http://www.w3.org/2000/01/rdf-schema#label> "Formularfieldgroupe" .
+# 
+# https://w3id.org/GerPS-onto/ontology#Dokument
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://BPMNbasedOntology#DocumentResource> .
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/Evidence> .
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#id> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/2000/01/rdf-schema#comment> "Documents are exchanged between actors and are the subject of a process step."@en .
+<https://w3id.org/GerPS-onto/ontology#Dokument> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Ergebnissempfänger
+<https://w3id.org/GerPS-onto/ontology#Ergebnissempf\u00E4nger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Ergebnissempf\u00E4nger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Agent> .
+<https://w3id.org/GerPS-onto/ontology#Ergebnissempf\u00E4nger> <http://www.w3.org/2000/01/rdf-schema#comment> "A result receiver is a person or company that benefits from the administrative service."@en .
+<https://w3id.org/GerPS-onto/ontology#Ergebnissempf\u00E4nger> <http://www.w3.org/2000/01/rdf-schema#label> "ResultReceiver"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage
+<https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal bases are references to already existing laws."@en .
+<https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> <http://www.w3.org/2000/01/rdf-schema#label> "LegalBasis"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Hauptakteur
+<https://w3id.org/GerPS-onto/ontology#Hauptakteur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Hauptakteur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Agent> .
+<https://w3id.org/GerPS-onto/ontology#Hauptakteur> <http://www.w3.org/2000/01/rdf-schema#comment> "The main actor is a public authority responsible for service delivery."@en .
+<https://w3id.org/GerPS-onto/ontology#Hauptakteur> <http://www.w3.org/2000/01/rdf-schema#label> "MainActor"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Leistung
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_prozess> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/GerPS-onto/ontology#Prozess> .
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_leikaID> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/2000/01/rdf-schema#comment> "Services describe the actions of public administrations."@en .
+<https://w3id.org/GerPS-onto/ontology#Leistung> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Mitwirkende
+<https://w3id.org/GerPS-onto/ontology#Mitwirkende> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Mitwirkende> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#FormalOrganization> .
+<https://w3id.org/GerPS-onto/ontology#Mitwirkende> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Agent> .
+<https://w3id.org/GerPS-onto/ontology#Mitwirkende> <http://www.w3.org/2000/01/rdf-schema#comment> "Contributors are external public authorities that are involved in the administrative service."@en .
+<https://w3id.org/GerPS-onto/ontology#Mitwirkende> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Prozess
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://BPMNbasedOntology#Process> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_prozessschritt> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/GerPS-onto/ontology#Prozessschritt> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_leikaID> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#comment> "Processes describe administrative procedures that are processed by specific persons in a repetitive sequence under concrete specifications (e.g., legal and administrative regulations) and with the use of aids (e.g., forms)."@en .
+<https://w3id.org/GerPS-onto/ontology#Prozess> <http://www.w3.org/2000/01/rdf-schema#label> "Process"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Prozessschritt
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://BPMNbasedOntology#Task> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#basiert_auf> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_ressource> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://BPMNbasedOntology#Resource> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_typ> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#RAG> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#id> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#comment> "Process steps describe actions or activities of the public administrations or actors."@en .
+<https://w3id.org/GerPS-onto/ontology#Prozessschritt> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessStep"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#RAG
+<https://w3id.org/GerPS-onto/ontology#RAG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#RAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#id> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#RAG> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#RAG> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference activity groups can be derived from concrete specifications (e.g., legal and administrative regulations), can bundle thematically related process elements, and reflect the process of service execution."@en .
+<https://w3id.org/GerPS-onto/ontology#RAG> <http://www.w3.org/2000/01/rdf-schema#label> "ReferenceActivityGroup"@en .
+# 
+# https://w3id.org/GerPS-onto/ontology#Regel
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Datenfelder> .
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/2000/01/rdf-schema#comment> "A Rule a datafield and its components follows."@en .
+<https://w3id.org/GerPS-onto/ontology#Regel> <http://www.w3.org/2000/01/rdf-schema#label> "FIMRule" .
+# 
+# https://w3id.org/GerPS-onto/ontology#Stammschemata
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Datenfelder> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#enthaelt> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#Struktur> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_regel> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#Regel> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#comment> "A structur that holds all components of its Formular"@en .
+<https://w3id.org/GerPS-onto/ontology#Stammschemata> <http://www.w3.org/2000/01/rdf-schema#label> "Formular" .
+# 
+# https://w3id.org/GerPS-onto/ontology#Struktur
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GerPS-onto/ontology#Datenfelder> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#enthaelt> .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#Struktur> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_regel> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/GerPS-onto/ontology#Regel> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://BPMNbasedOntology#name> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/GerPS-onto/ontology#hat_datenfeldID> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#comment> "a fim specific container that holds Formularfields or Formulargroups."@en .
+<https://w3id.org/GerPS-onto/ontology#Struktur> <http://www.w3.org/2000/01/rdf-schema#label> "Structur" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid30 <http://www.w3.org/2002/07/owl#members> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://BPMNbasedOntology#Activity> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://BPMNbasedOntology#Agent> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://BPMNbasedOntology#Process> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://BPMNbasedOntology#Resource> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/GerPS-onto/ontology#Handlungsgrundlage> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/GerPS-onto/ontology#RAG> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
