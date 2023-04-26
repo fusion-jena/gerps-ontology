@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/GerPS-onto/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/GerPS-onto/ontology#","name":"GerPS-onto: An ontology for German public service processes", "headline":"GerPS-onto models the process of a German public service.It was created by extending the BBO with some domain specific concepts.In addition, some concepts are also mapped to the e-Government Core Vocabularies.The ontology was automatically populated with an exemplary German public service by parsing XML-based (XProzess, XDatenfelder) files used for describing administrative BPMN-processes and form fields involved in executing the specific service.", "datePublished":"Tue Apr 25 15:05:03 CEST 2023", "version":"1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Jonas Hoyer"},{"@type":"Person","name":"Leila Feddoul","url":"https://orcid.org/0000-0001-8896-8208"},{"@type":"Person","name":"Maximilian Raupach"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,15 +40,15 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
 $(function(){
     loadHash();
 }); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -96,13 +96,13 @@ In addition, some concepts are also mapped to the e-Government Core Vocabularies
 The ontology was automatically populated with an exemplary German public service by parsing XML-based (XProzess, XDatenfelder) files used for describing administrative BPMN-processes and form fields involved in executing the specific service.
 </span>
 </div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <!--INTRODUCTION SECTION-->
     <!--div id="introduction"><h2 id="intro" class="list"><span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 span class="markdown"-->
 </div>
-  
+
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">GerPS-onto: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -271,19 +271,19 @@ This ontology has the following classes and properties.</span>
       <a href="#hat_abgabefrist"
          title="https://w3id.org/GerPS-onto/ontology#hat_abgabefrist">has_submission_deadline</a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
 </div>
-  
+
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">GerPS-onto: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-      <img src="./resources/ontology_image.png" width="800" height="400" title="GerPS-Onto">
+      <img src="./resources/ontology_image.png" width="900" height="500" title="GerPS-Onto">
 
 </div>
-   
+
 <!--DESCRIPTION SECTION-->
-<div id="description"><h2 id="desc" class="list">GerPS-onto: Namespace <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">GerPS-onto: Namespaces <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
    <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
       .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -365,20 +365,20 @@ This ontology has the following classes and properties.</span>
 <!--
 
 
-https://w3id.org/GerPS-onto/ontology#	
-bbo	http://BPMNbasedOntology#	
-cpsv	http://purl.org/vocab/cpsv#	
-eli	http://data.europa.eu/eli/ontology#	
-foaf	http://xmlns.com/foaf/0.1/	
-gerps	https://w3id.org/GerPS-onto/ontology#	
-legal	http://www.w3.org/ns/legal#	
-m8g	http://data.europa.eu/m8g/	
-oboInOwl	http://www.geneontology.org/formats/oboInOwl#	
-org	http://www.w3.org/ns/org#	
-owl	http://www.w3.org/2002/07/owl#	
-rdf	http://www.w3.org/1999/02/22-rdf-syntax-ns#	
-rdfs	http://www.w3.org/2000/01/rdf-schema#	
-xml	http://www.w3.org/XML/1998/namespace	
+https://w3id.org/GerPS-onto/ontology#
+bbo	http://BPMNbasedOntology#
+cpsv	http://purl.org/vocab/cpsv#
+eli	http://data.europa.eu/eli/ontology#
+foaf	http://xmlns.com/foaf/0.1/
+gerps	https://w3id.org/GerPS-onto/ontology#
+legal	http://www.w3.org/ns/legal#
+m8g	http://data.europa.eu/m8g/
+oboInOwl	http://www.geneontology.org/formats/oboInOwl#
+org	http://www.w3.org/ns/org#
+owl	http://www.w3.org/2002/07/owl#
+rdf	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs	http://www.w3.org/2000/01/rdf-schema#
+xml	http://www.w3.org/XML/1998/namespace
 xsd	http://www.w3.org/2001/XMLSchema#
 
 
@@ -1611,13 +1611,14 @@ This section provides details for each class and property defined by GerPS-onto.
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+Annane, Amina; Aussenac-Gilles, Nathalie; Kamel, Mouna: BBO: BPMN 2.0 based ontology for business process representation. In: 20th European Conference on Knowledge Management (ECKM 2019). volume 1, pp. 49–59, 2019.
+</span>
 
 </div>
 <div id="acknowledgments">
